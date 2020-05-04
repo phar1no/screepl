@@ -12,9 +12,9 @@
 # https://github.com/phar1no/screepl
 #
 
-SCREEN_DIR=/home/qom/Pictures/Screens2Upload/
+screen_dir=~/Pictures/
 date_name=$(date +"%Y-%m-%d_%H:%M:%S")
-file_name=${SCREEN_DIR}Screeshot_${date_name}.png
+file_name=${screen_dir}Screeshot_${date_name}.png
 
 gnome-screenshot -af ${file_name}
 
