@@ -22,7 +22,7 @@ gnome-screenshot -af ${file_name}
 #echo "$?"
 #echo `ls -l ${file_name}`
 
-if [ $? == 0 ] && [ -e ${file_name} ];then
+if [[ $? == 0 ]] && [[ -e ${file_name} ]]; then
 	notify-send 'Screenshot saved to' $file_name
 	short_link=$(ffsend upload -Syc $file_name 2> /dev/null) 
 	notify-send 'Screenshot uploaded to' $short_link 
